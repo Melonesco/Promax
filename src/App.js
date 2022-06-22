@@ -1,11 +1,11 @@
 import Connect from "./Connect";
 
 function App() {
-  return (
-      <>
-          <Connect/>
-      </>
-  );
+    return (
+        <>
+            <Connect/>
+        </>
+    );
 }
 
 export default App;

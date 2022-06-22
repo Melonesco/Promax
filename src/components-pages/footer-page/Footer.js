@@ -1,12 +1,13 @@
 import './Footer.css';
 import React from "react";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {Link} from "react-router-dom";
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {faFacebook} from '@fortawesome/free-brands-svg-icons';
 import {faInstagram} from '@fortawesome/free-brands-svg-icons';
 import {faTwitter} from '@fortawesome/free-brands-svg-icons';
 
-function Footer(){
-    return(
+function Footer() {
+    return (
         <>
             <footer>
                 <div className={"footer"}>
@@ -14,21 +15,21 @@ function Footer(){
                         <div className={"footer__info"}>
                             <div>
                                 <h2>Navigation</h2>
-                                <a href="/">Search</a>
-                                <a href="/">Contact Us</a>
-                                <a href="/">Returns</a>
+                                <Link to="/">Search</Link>
+                                <Link to="/">Contact Us</Link>
+                                <Link to="/">Returns</Link>
                             </div>
                             <div>
                                 <h2>Legal</h2>
-                                <a href="/">Privacy Policy</a>
-                                <a href="/">Terms of Service</a>
-                                <a href="/">Refund policy</a>
+                                <Link to="/">Privacy Policy</Link>
+                                <Link to="/">Terms of Service</Link>
+                                <Link to="/">Refund policy</Link>
                             </div>
                             <div className={"footer__connect"}>
                                 <h2>Connect</h2>
-                                <a href="https://facebook.com"><FontAwesomeIcon  className={'social'} icon={faFacebook} /> Facebook</a>
-                                <a href="https://instagram.com"><FontAwesomeIcon  className={'social'} icon={faInstagram} /> Instagram</a>
-                                <a href="https://twitter.com"><FontAwesomeIcon  className={'social'} icon={faTwitter} /> Twitter</a>
+                                <a href="https://facebook.com"><FontAwesomeIcon className={'social'} icon={faFacebook}/> Facebook</a>
+                                <a href="https://instagram.com"><FontAwesomeIcon className={'social'} icon={faInstagram}/> Instagram</a>
+                                <a href="https://twitter.com"><FontAwesomeIcon className={'social'} icon={faTwitter}/> Twitter</a>
                             </div>
                         </div>
                         <div>

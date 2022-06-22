@@ -1,16 +1,17 @@
 import './Main.css';
 import React from "react";
 import Carts from "../../images/block/photos_desktop.png"
+import {Link} from "react-router-dom";
 
 function Main() {
-    return(
+    return (
         <>
 
             <div className={'intro'}>
                 <div className={'intro__shop'}>
                     <div>
                         <p>by Just PROMAX</p>
-                        <a href="/categories">Shop now</a>
+                        <Link to="/categories">Shop now</Link>
                         <div id={"intro__shop_id"}></div>
                     </div>
                 </div>
@@ -21,7 +22,7 @@ function Main() {
                     <div className={"container__one"}>
                         <div>
                             <p>GUCCI</p>
-                            <a href="/">Shop Now</a>
+                            <Link to="/categories">Shop Now</Link>
                         </div>
                     </div>
                 </div>
@@ -29,7 +30,7 @@ function Main() {
                     <div className={"container__two"}>
                         <div>
                             <p>Puma</p>
-                            <a href="/">Shop Now</a>
+                            <Link to="/categories">Shop Now</Link>
                         </div>
                     </div>
                 </div>
@@ -39,7 +40,7 @@ function Main() {
                     <div className={"container__three"}>
                         <div>
                             <p>Smile</p>
-                            <a href="/">Shop Now</a>
+                            <Link to="/categories">Shop Now</Link>
                         </div>
                     </div>
                 </div>
@@ -47,7 +48,7 @@ function Main() {
                     <div className={"container__four"}>
                         <div>
                             <p>Balmain</p>
-                            <a href="/">Shop Now</a>
+                            <Link to="/categories">Shop Now</Link>
                         </div>
                     </div>
                 </div>
@@ -78,7 +79,7 @@ function Main() {
                     <p>Subscribe to our newsletter to get a 10% discount on your first order!</p>
                     <div>
                         <input id={"myinput"} type="text" placeholder="Email Address" value=""/>
-                            <button onClick="myFunction()">Subscribe To Our Newsletter</button>
+                        <button onClick="myFunction()">Subscribe To Our Newsletter</button>
                     </div>
                 </div>
             </div>

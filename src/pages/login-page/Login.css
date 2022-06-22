@@ -32,7 +32,7 @@
     opacity: 0.5;
 }
 
-.main__login__info input{
+.main__login__info input {
     color: black;
     font-size: 16px;
     display: block;
@@ -57,7 +57,7 @@
     background-color: black;
     border: solid 1px black;
     width: 300px;
-    height:  50px;
+    height: 50px;
     margin-top: 20px;
     border-radius: 5px;
     text-transform: uppercase;
@@ -65,6 +65,7 @@
 
     transition: all 0.2s linear;
 }
+
 .main__login-create:hover,
 .main__login__info button:hover {
     color: black;
@@ -90,7 +91,7 @@
 }
 
 
-.main__login-pas a{
+.main__login-pas a {
     color: white;
     font-size: 18px;
     user-select: none;

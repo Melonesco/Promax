@@ -39,7 +39,6 @@ img {
 }
 
 
-
 /* footer */
 
 .footer {
@@ -54,7 +53,7 @@ img {
 
 .footer a,
 .footer h2,
-.footer p{
+.footer p {
     color: white;
 }
 
@@ -73,7 +72,7 @@ img {
     align-items: center;
 }
 
-.footer  h2 {
+.footer h2 {
     margin-bottom: 20px;
 }
 
@@ -102,7 +101,7 @@ img {
     color: dodgerblue;
 }
 
-.social{
+.social {
     color: dodgerblue;
 
     transition: all 0.2s linear;

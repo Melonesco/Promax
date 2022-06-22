@@ -1,15 +1,11 @@
 import './Header.css';
 import React from "react";
+import {Link} from "react-router-dom";
 import Logo from '../../images/logo/logo4.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faBars} from "@fortawesome/free-solid-svg-icons";
-import {faSearch} from "@fortawesome/free-solid-svg-icons";
 import {faShoppingCart} from "@fortawesome/free-solid-svg-icons";
 import {faClose} from "@fortawesome/free-solid-svg-icons";
-import {BrowserRouter as Router, Routes, Route, Link} from "react-router-dom";
-import Main from '../../pages/main-page/Main'
-import Register from '../../pages/register-page/Register';
-import Login from "../../pages/login-page/Login";
 
 function Header() {
     return(
@@ -18,7 +14,7 @@ function Header() {
                 <div>
                     <header className={'main__header'}>
                         <nav className={'navbar'}>
-                            <a id={'nav__img'} href="/"><img src={Logo} alt=""/></a>
+                            <Link id={'nav__img'} to="/"><img src={Logo} alt=""/></Link>
                             <div className={'nav__burger'}>
                                 <input type="checkbox" id={'toggle'}/>
                                 <label htmlFor={'toggle'}><FontAwesomeIcon color={'white'} fontSize={'32px'} icon={faBars} /></label>
@@ -26,24 +22,19 @@ function Header() {
                                     <label id="nav__close" htmlFor={'toggle'}><FontAwesomeIcon color={'white'} fontSize={'32px'} icon={faClose} /></label>
                                     <h2>Main Menu</h2>
                                     <ul id={'nav-list'} className={'nav__list'}>
-                                        <li><a href="/">Home</a></li>
-                                        <li><a href="/">About</a></li>
-                                        <li><a href="/">Contact</a></li>
+                                        <li><Link to="/">Home</Link></li>
+                                        <li><Link to="/">About</Link></li>
+                                        <li><Link to="/">Contact</Link></li>
                                     </ul>
                                     <h2>My Account</h2>
                                     <ul className={'nav__list'}>
-                                        <li><a href="/login">Log In</a></li>
-                                        <li><a href="/register">Create Account</a></li>
+                                        <li><Link to="/login">Log In</Link></li>
+                                        <li><Link to="/register">Create Account</Link></li>
                                     </ul>
                                 </div>
 
-
-
                                 <div>
-                                    <a href="/"><FontAwesomeIcon color={'white'} fontSize={'32px'} icon={faSearch} /></a>
-                                </div>
-                                <div>
-                                    <a href="/"><FontAwesomeIcon color={'white'} fontSize={'32px'} icon={faShoppingCart} /></a>
+                                    <Link to="/"><FontAwesomeIcon color={'white'} fontSize={'32px'} icon={faShoppingCart} /></Link>
                                 </div>
                             </div>
                         </nav>

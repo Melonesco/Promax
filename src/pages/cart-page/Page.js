@@ -4,17 +4,15 @@ import Categories from "../categories-page/Categories";
 import Products from "../../components/products/Products";
 
 
-class Page extends React.Component{
+class Page extends React.Component {
 
     constructor() {
         super();
-        this.state = {
-
-        }
+        this.state = {}
     }
 
     render() {
-        return(
+        return (
             <>
                 <div className={'page'}>
                     <div></div>

@@ -1,8 +1,8 @@
 import './Email.css';
 import React from "react";
 
-function Email(){
-    return(
+function Email() {
+    return (
         <>
             <div className={"main__email"}>
                 <div>
@@ -10,7 +10,7 @@ function Email(){
                     <p>We will send you an email to reset your password.</p>
                     <div className={"main__email__info"}>
                         <input type={"text"} placeholder={"Email"}/>
-                            <button>Submit</button>
+                        <button>Submit</button>
                     </div>
                     <div className="main__email-pas"><a href="/login">Cancel</a></div>
                     <a className="main__email-create" href="/register">Create Account</a>
