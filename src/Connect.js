@@ -13,22 +13,20 @@ function Connect () {
   // const listId = Products.data.map(item => <Route exact path={`/categories/${item.id}`} element={<Page/>}></Route>)
 
   return (
-    <>
-      <Router>
-        <Upper/>
-        <Header/>
-        <Routes>
-          <Route exact path="/" element={<Main/>}/>
-          <Route exact path="/categories" element={<Categories/>}/>
-          <Route exact path="/login" element={<Login/>}/>
-          <Route exact path="/email" element={<Email/>}/>
-          <Route exact path="/register" element={<Register/>}/>
-          {/* <Route exact path={'/categories/:id'} component={Products} element={<Page/>}/> */}
-          {/* {listId} */}
-        </Routes>
-        <Footer/>
-      </Router>
-    </>
+    <Router>
+      <Upper/>
+      <Header/>
+      <Routes>
+        <Route exact path="/" element={<Main/>}/>
+        <Route exact path="/categories" element={<Categories/>}/>
+        <Route exact path="/login" element={<Login/>}/>
+        <Route exact path="/email" element={<Email/>}/>
+        <Route exact path="/register" element={<Register/>}/>
+        {/* <Route exact path={'/categories/:id'} component={Products} element={<Page/>}/> */}
+        {/* {listId} */}
+      </Routes>
+      <Footer/>
+    </Router>
   );
 }
 

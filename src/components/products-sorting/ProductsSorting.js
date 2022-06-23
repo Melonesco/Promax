@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { ProductsBlock } from '../products-blocks/ProductsBlock';
+import React, { useCallback, useMemo, useState } from 'react';
+import { ProductsCarts } from '../products-carts/ProductsCarts';
 import Products from '../products/Products';
 import Search from '../../images/icons/search-line.svg';
 
@@ -7,29 +7,32 @@ export const ProductsSorting = () => {
   const [search, setSearch] = useState('');
   const [products, setProducts] = useState(Products);
 
-  function selectGoods (event) {
+  const selectGoods = useCallback((event) => {
     const value = event.target.value;
     if (value === '3') {
-      const element = products.sort((a, b) => {
+      const elements = products.sort((a, b) => {
         if (a.price > b.price) return -1;
+        return 1;
       });
-      setProducts(element.map(item => item));
+      setProducts(elements.map(item => item));
     } else if (value === '2') {
-      const element = products.sort((a, b) => {
+      const elements = products.sort((a, b) => {
         if (a.price < b.price) return -1;
+        return 1;
       });
-      setProducts(element.map(item => item));
+      setProducts(elements.map(item => item));
     } else if (value === '1') {
-      const element = products.sort((a, b) => {
+      const elements = products.sort((a, b) => {
         if (a.id < b.id) return -1;
+        return 1;
       });
-      setProducts(element.map(item => item));
+      setProducts(elements.map(item => item));
     }
-  }
+  }, [products]);
 
-  const filteredName = products.filter(item => {
+  const filteredName = useMemo(() => products.filter(item => {
     return item.name.toLowerCase().includes(search.toLowerCase());
-  });
+  }), [products, search]);
 
   return (
     <>
@@ -52,7 +55,7 @@ export const ProductsSorting = () => {
         </div>
       </div>
       <div className={'products__goods'}>
-        {filteredName.map(item => <ProductsBlock item={item} key={item.id}/>)}
+        {filteredName.map(item => <ProductsCarts item={item} key={item.id}/>)}
       </div>
     </>
   );
