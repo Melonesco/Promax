@@ -4,6 +4,7 @@ a {
     color: black;
 }
 
+
 .products {
     background: rgb(19, 120, 126);
     background: linear-gradient(60deg, rgba(19, 120, 126, 1) 0%, rgba(76, 17, 147, 1) 21%, rgba(149, 43, 150, 1) 100%);
@@ -11,6 +12,7 @@ a {
     background-position: center;
     padding: 125px 0;
 }
+
 
 .products__inner {
     display: flex;
@@ -34,6 +36,7 @@ a {
     display: flex;
     position: relative;
 }
+
 
 .products__form form input {
     width: 300px;
@@ -63,6 +66,7 @@ a {
     margin-top: 50px;
 }
 
+
 .products__select select {
     background-color: silver;
     width: 100%;
@@ -74,16 +78,17 @@ a {
     box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.5);
 }
 
+
 .products__select option {
     padding: 10px;
 }
+
 
 .products__goods {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
-    /*margin: 0 100px;*/
+    margin: 0 100px;
     gap: 20px;
     padding-top: 100px;
 }
@@ -98,7 +103,9 @@ a {
     height: 450px;
     box-shadow: 10px 5px 5px #1F1F1F;
     overflow: hidden;
+    cursor: pointer;
 }
+
 
 .products__block__name {
     margin-left: 50px;
@@ -108,12 +115,17 @@ a {
     font-weight: bold;
 }
 
+
 .products__block__price {
-    margin-left: 50px;
+    display: flex;
+    align-items: center;
     font-size: 24px;
     font-weight: bold;
+    gap: 10px;
+    margin-left: 50px;
     margin-bottom: 10px;
 }
+
 
 .products__block__info {
     margin-left: 50px;
