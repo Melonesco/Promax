@@ -1,0 +1,67 @@
+/* upper */
+
+.upper {
+    background-color: black;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.upper h2,
+.upper a {
+    color: white;
+    font-size: 16px;
+    user-select: none;
+}
+
+
+.upper__block {
+    width: 100%;
+    height: 40px;
+    margin: 0 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.upper__block__local h2 {
+    color: yellow;
+}
+
+
+.upper__block__local span {
+    color: dodgerblue;
+}
+
+
+.upper__block__info h2 {
+    text-transform: uppercase;
+}
+
+
+.upper__block__connect {
+    display: flex;
+    align-items: center;
+}
+
+
+.upper__block__connect a {
+    margin-left: 10px;
+    overflow: hidden;
+}
+
+
+.social {
+    color: dodgerblue;
+
+    transition: all 0.2s linear;
+}
+
+
+.social:hover {
+    color: yellow;
+}

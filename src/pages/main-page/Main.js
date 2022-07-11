@@ -21,7 +21,7 @@ function Main () {
           <div className={'container__one'}>
             <div>
               <p>GUCCI</p>
-              <Link to="/categories">Shop Now</Link>
+              <Link className={'container__buttons'} to="/categories">Shop Now</Link>
             </div>
           </div>
         </div>
@@ -29,7 +29,7 @@ function Main () {
           <div className={'container__two'}>
             <div>
               <p>Puma</p>
-              <Link to="/categories">Shop Now</Link>
+              <Link className={'container__buttons'} to="/categories">Shop Now</Link>
             </div>
           </div>
         </div>
@@ -39,7 +39,7 @@ function Main () {
           <div className={'container__three'}>
             <div>
               <p>Smile</p>
-              <Link to="/categories">Shop Now</Link>
+              <Link className={'container__buttons'} to="/categories">Shop Now</Link>
             </div>
           </div>
         </div>
@@ -47,7 +47,7 @@ function Main () {
           <div className={'container__four'}>
             <div>
               <p>Balmain</p>
-              <Link to="/categories">Shop Now</Link>
+              <Link className={'container__buttons'} to="/categories">Shop Now</Link>
             </div>
           </div>
         </div>
@@ -77,8 +77,9 @@ function Main () {
           <h2>Subscribe To Our Newsletter</h2>
           <p>Subscribe to our newsletter to get a 10% discount on your first order!</p>
           <div>
-            <input id={'myinput'} type="text" placeholder="Email Address" value=""/>
-            <button onClick="myFunction()">Subscribe To Our Newsletter</button>
+            <input id={'myinput'} type="text" placeholder="Email Address" onChange={() => null}/>
+            <button onClick={() => null}>Subscribe To Our Newsletter
+            </button>
           </div>
         </div>
       </div>

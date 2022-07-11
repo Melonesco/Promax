@@ -1,0 +1,52 @@
+header {
+    position: sticky;
+    top: 0;
+    z-index: 3;
+}
+
+
+/* nav */
+
+.navbar {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    width: 100%;
+    padding: 10px 0;
+    top: 0;
+    z-index: 1;
+    background-color: rgba(36, 37, 41, 0.3);
+}
+
+
+.navbar:before {
+    content: "";
+    position: absolute;
+    background-color: white;
+    opacity: 0.5;
+    width: 100%;
+    height: 1px;
+    bottom: 0;
+}
+
+
+#nav__img {
+    margin-right: 50px;
+    margin-left: 50px;
+}
+
+
+#nav__img img {
+    width: 180px;
+    height: 100px;
+}
+
+
+.nav__blocks {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-right: 50px;
+}

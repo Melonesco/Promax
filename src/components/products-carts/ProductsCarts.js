@@ -1,19 +1,20 @@
 import React from 'react';
 import '../../pages/categories-page/Categories.css';
 import { ProductsBuy } from '../products-buy/ProductsBuy';
+import './ProductsCarts.css';
 
 export const ProductsCarts = ({ item }) => {
   return (
-    <div className={'products__block'}>
-      <img width={'70%'} style={{ display: 'block', margin: '0 auto' }} src={item.img[0]} alt=""/>
-      <div className={'products__block__name'}>
+    <div className={'products__carts'}>
+      <img className={'products__carts__img'} src={item.img[0]} alt=""/>
+      <div className={'products__carts__name'}>
         {item.name}
       </div>
-      <div className={'products__block__price'}>
+      <div className={'products__carts__price'}>
         <div>{item.price} $</div>
-        <ProductsBuy/>
+        <ProductsBuy item={item}/>
       </div>
-      <div className={'products__block__info'}>
+      <div className={'products__carts__info'}>
         {item.info}
       </div>
     </div>

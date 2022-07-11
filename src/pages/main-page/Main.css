@@ -1,43 +1,3 @@
-*,
-*:after,
-*:before {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-html,
-body {
-    position: relative;
-    height: 100%;
-    outline: none;
-}
-
-body {
-    font-family: "Roboto", sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    margin: 0;
-}
-
-a {
-    text-decoration: none;
-    outline: none;
-}
-
-img {
-    outline: none;
-}
-
 /* intro */
 
 .intro {
@@ -52,17 +12,19 @@ img {
 
 
 .intro__shop {
-    display: flex;
-    justify-content: center;
-    align-items: end;
-    height: 100vh;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
+
 
 #intro__shop_id {
     width: 100px;
     height: 200px;
     opacity: 0;
 }
+
 
 .intro__shop p {
     color: white;
@@ -72,6 +34,7 @@ img {
     font-weight: bold;
     user-select: none;
 }
+
 
 .intro__shop a {
     color: white;
@@ -90,6 +53,7 @@ img {
     transition: all 0.2s linear;
 }
 
+
 .intro__shop a:hover {
     background-color: white;
     color: black;
@@ -106,13 +70,16 @@ img {
     padding: 0 70px;
 }
 
+
 #first {
     padding-top: 150px;
 }
 
+
 #second {
     padding-bottom: 150px;
 }
+
 
 .container__inner {
     width: 100%;
@@ -124,15 +91,18 @@ img {
 
 }
 
+
 #container__inner-two {
     margin-top: 150px;
     overflow: hidden;
 }
 
+
 #container__inner-three {
     margin-top: -150px;
     overflow: hidden;
 }
+
 
 .container__one,
 .container__two,
@@ -151,11 +121,12 @@ img {
     transition: transform 1s;
 }
 
+
 .container__one:hover,
 .container__two:hover,
 .container__three:hover,
 .container__four:hover {
-    transform: scale(1.1);;
+    transform: scale(1.1);
 }
 
 
@@ -172,18 +143,17 @@ img {
     user-select: none;
 }
 
+
 .container__one p {
     color: black;
 }
 
-.container__one a,
-.container__two a,
-.container__three a,
-.container__four a {
-    color: white;
-    font-size: 18px;
+
+.container__buttons {
     text-transform: uppercase;
     display: block;
+    color: white;
+    font-size: 18px;
     background-color: black;
     text-align: center;
     width: 180px;
@@ -196,6 +166,7 @@ img {
     user-select: none;
 }
 
+
 .container__one a:hover,
 .container__two a:hover,
 .container__three a:hover,
@@ -205,21 +176,26 @@ img {
     border: solid 1px white;
 }
 
+
 .container__one {
     background-image: url("../../images/block/gucci.jpg");
 }
+
 
 .container__two {
     background-image: url("../../images/block/puma.jpg");
 }
 
+
 .container__three {
     background-image: url("../../images/block/smile.jpg");
 }
 
+
 .container__four {
     background-image: url("../../images/block/balmain.jpg");
 }
+
 
 .container__one:after,
 .container__two:after,
@@ -233,11 +209,13 @@ img {
     background: linear-gradient(transparent, rgba(0, 0, 0, 0.7));
 }
 
+
 /* box */
 
 .box {
     margin: 150px 0;
 }
+
 
 #box__img-1,
 #box__img-2,
@@ -249,13 +227,16 @@ img {
     background-position: center;
 }
 
+
 #box__img-1 {
     background-image: url("../../images/backgrounds/man.jpg");
 }
 
+
 #box__img-2 {
     background-image: url("../../images/backgrounds/woman.jpg");
 }
+
 
 #box__img-3 {
     background-image: url("../../images/backgrounds/summer.jpg");
@@ -271,16 +252,19 @@ img {
     align-items: center;
 }
 
+
 .body__info {
     max-width: 500px;
     text-align: center;
 }
+
 
 .body__info h2 {
     color: white;
     font-size: 44px;
     user-select: none;
 }
+
 
 .body__info p {
     margin-top: 20px;
@@ -309,16 +293,19 @@ img {
     font-size: 32px;
 }
 
+
 .content p {
     padding: 20px 0 25px 0;
     opacity: 0.7;
 }
+
 
 .content input {
     width: 250px;
     height: 50px;
     padding-left: 15px;
 }
+
 
 .content button {
     height: 50px;
@@ -329,6 +316,7 @@ img {
     border-radius: 0 5px 5px 0;
     margin-left: -10px;
 }
+
 
 .content button:hover {
     background-color: white;

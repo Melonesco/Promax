@@ -1,0 +1,36 @@
+.cart__menu {
+    position: absolute;
+    right: 0;
+    background-color: rgba(36, 37, 41);
+    width: 400px;
+    padding: 10px 20px;
+    z-index: 2;
+    border-radius: 15px;
+
+    color: white;
+}
+
+
+.cart__menu__items__list {
+
+}
+
+
+.cart__menu__items {
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.cart__menu__names {
+    display: flex;
+    gap: 10px;
+}
+
+
+.cart__menu__arrange {
+    margin-top: 20px;
+    padding: 20px 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.4);
+}
