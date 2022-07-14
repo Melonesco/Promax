@@ -1,0 +1,13 @@
+.product__page__share {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+
+    transition: all 0.2s linear;
+}
+
+
+.product__page__share:hover {
+    color: tomato;
+}

@@ -1,10 +1,10 @@
 import React, { useCallback, useMemo, useState } from 'react';
-import { ProductsCarts } from '../products-carts/ProductsCarts';
 import Search from '../../images/icons/search-line.svg';
-import './ProductsSorting.css';
 import Products from '../products/Products';
+import { ProductsCards } from '../product-cards/ProductCards';
+import './ProductSorting.css';
 
-export const ProductsSorting = () => {
+export const ProductSorting = () => {
   const [search, setSearch] = useState('');
   const [products, setProducts] = useState(Products);
 
@@ -46,9 +46,7 @@ export const ProductsSorting = () => {
         <div className={'products__form'}>
           <form>
             <img src={Search} alt=""/>
-            <input type="search" style={{ color: 'purple', textTransform: 'uppercase' }}
-              placeholder={'Search'}
-              onChange={handleSearch}/>
+            <input maxLength={30} type="search" placeholder={'Search'} onChange={handleSearch}/>
           </form>
         </div>
         <div className={'products__select'}>
@@ -60,7 +58,7 @@ export const ProductsSorting = () => {
         </div>
       </div>
       <div className={'products__goods'}>
-        {filteredName.map(item => <ProductsCarts item={item} key={item.id}/>)}
+        {filteredName.map(res => <ProductsCards productCards={res} key={res.id}/>)}
       </div>
     </div>
   );

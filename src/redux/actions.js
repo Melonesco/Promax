@@ -1,15 +1,22 @@
-import { CART_ADD, CART_DELETE } from './types';
+import { PRODUCT_ADD_TO_CART, PRODUCT_CURRENT, PRODUCT_DELETE_FROM_CART } from './types';
 
-export const cartAdd = (text, id) => {
+export const productAddToCart = (product, id) => {
   return {
-    type: CART_ADD,
-    data: { text, id }
+    type: PRODUCT_ADD_TO_CART,
+    data: { product, id }
   };
 };
 
-export const cartDelete = (id) => {
+export const productDeleteFromCart = (id) => {
   return {
-    type: CART_DELETE,
+    type: PRODUCT_DELETE_FROM_CART,
     id
+  };
+};
+
+export const setCurrentProduct = (item) => {
+  return {
+    type: PRODUCT_CURRENT,
+    item
   };
 };

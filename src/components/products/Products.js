@@ -32,7 +32,8 @@ const Products = [
     price: 15000,
     color: ['red', 'green', 'white', 'black'],
     img: [Gucci, Gucci2, Gucci3, Gucci4, Gucci5],
-    info: 'Good quality men\'s t-shirt'
+    info: 'Good quality men\'s t-shirt',
+    size: ['S', 'M', 'L', 'XL', '2XL', '3XL']
   },
   {
     id: 2,
@@ -41,7 +42,8 @@ const Products = [
     price: 7000,
     color: ['red', 'green', 'white', 'black'],
     img: [Dark3d],
-    info: 'Good quality men\'s t-shirt'
+    info: 'Good quality men\'s t-shirt',
+    size: ['S', 'M', 'L', 'XL', '2XL']
   },
   {
     id: 3,
@@ -50,7 +52,8 @@ const Products = [
     price: 2500,
     color: ['red', 'green', 'white', 'black'],
     img: [ShortsImg],
-    info: 'Good quality men\'s shorts'
+    info: 'Good quality men\'s shorts',
+    size: ['S', 'M', 'L', 'XL', '2XL', '3XL']
   },
   {
     id: 4,
@@ -59,7 +62,8 @@ const Products = [
     price: 3200,
     color: ['red', 'green', 'white', 'black'],
     img: [Puma],
-    info: 'Good quality men\'s shorts'
+    info: 'Good quality men\'s shorts',
+    size: ['S', 'M', 'L', 'XL', '2XL', '3XL', '4XL']
   },
   {
     id: 5,
@@ -68,7 +72,8 @@ const Products = [
     price: 800,
     color: ['red', 'green', 'white', 'black'],
     img: [HipHop1, HipHop2, HipHop3, HipHop4],
-    info: 'Good quality men\'s cap'
+    info: 'Good quality men\'s cap',
+    size: ['S', 'M', 'L', 'XL', '2XL', '3XL']
   },
   {
     id: 6,
@@ -77,7 +82,8 @@ const Products = [
     price: 500,
     color: ['red', 'green', 'white', 'black'],
     img: [Printer3d2],
-    info: 'Good quality men\'s t-shirt'
+    info: 'Good quality men\'s t-shirt',
+    size: ['S', 'M', 'L', 'XL', '2XL', '3XL']
   },
   {
     id: 7,
@@ -86,7 +92,8 @@ const Products = [
     price: 1000,
     color: ['red', 'green', 'white', 'black'],
     img: [Sum2, Sum3],
-    info: 'Good quality men\'s cap'
+    info: 'Good quality men\'s cap',
+    size: ['M', 'L', 'XL', '2XL', '3XL']
   },
   {
     id: 8,
@@ -95,7 +102,8 @@ const Products = [
     price: 500,
     color: ['red', 'green', 'white', 'black'],
     img: [Printer3d],
-    info: 'Good quality men\'s t-shirt'
+    info: 'Good quality men\'s t-shirt',
+    size: ['S', 'M', 'L', 'XL', '2XL', '3XL', '4XL']
   },
   {
     id: 9,
@@ -104,7 +112,8 @@ const Products = [
     price: 2200,
     color: ['red', 'green', 'white', 'black'],
     img: [Nike1, Nike2, Nike3, Nike4],
-    info: 'Good quality men\'s shorts'
+    info: 'Good quality men\'s shorts',
+    size: ['S', 'M', 'L', 'XL', '2XL']
   },
   {
     id: 10,
@@ -113,7 +122,8 @@ const Products = [
     price: 1500,
     color: ['red', 'green', 'white', 'black'],
     img: [La1, La2, La3],
-    info: 'Good quality men\'s cap'
+    info: 'Good quality men\'s cap',
+    size: ['S', 'M', 'L', 'XL', '2XL']
   },
   {
     id: 11,
@@ -122,7 +132,8 @@ const Products = [
     price: 500,
     color: ['red', 'green', 'white', 'black'],
     img: [Print3d],
-    info: 'Good quality men\'s t-shirt'
+    info: 'Good quality men\'s t-shirt',
+    size: ['S', 'M', 'L', 'XL', '2XL', '3XL']
   },
   {
     id: 12,
@@ -131,7 +142,8 @@ const Products = [
     price: 500,
     color: ['red', 'green', 'white', 'black'],
     img: [IceCream],
-    info: 'Good quality men\'s t-shirt'
+    info: 'Good quality men\'s t-shirt',
+    size: ['S', 'M', 'L', 'XL', '2XL', '3XL']
   }
 ];
 

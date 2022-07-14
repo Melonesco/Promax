@@ -1,4 +1,4 @@
-import { CART_ADD, CART_DELETE } from '../types';
+import { PRODUCT_ADD_TO_CART, PRODUCT_DELETE_FROM_CART } from '../types';
 
 const initialState = {
   cart: []
@@ -6,21 +6,17 @@ const initialState = {
 
 export const cartReducer = (state = initialState, action) => {
   switch (action.type) {
-  case CART_ADD:
+  case PRODUCT_ADD_TO_CART:
     return {
       ...state,
       cart: [...state.cart, action.data]
     };
-  case CART_DELETE:
-
-    const { id } = action;
-    const { cart } = state;
-
-    const itemIndex = cart.findIndex(res => res.id === id);
+  case PRODUCT_DELETE_FROM_CART:
+    const itemIndex = state.cart.findIndex(res => res.id === action.id);
 
     const deleteItemInCart = [
-      ...cart.slice(0, itemIndex),
-      ...cart.slice(itemIndex + 1)
+      ...state.cart.slice(0, itemIndex),
+      ...state.cart.slice(itemIndex + 1)
     ];
 
     return {

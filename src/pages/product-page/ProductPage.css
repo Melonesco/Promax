@@ -1,0 +1,73 @@
+.product__page {
+    height: 100vh;
+    /*background-image: url("/src/images/backgrounds/sahara-1.jpg");*/
+    /*background-repeat: no-repeat;*/
+    /*background-size: cover;*/
+    /*background-position: center;*/
+    background-color: #F4F4F4;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.product__page__blocks {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.product__page__img,
+.product__page__block {
+    width: 600px;
+    height: 600px;
+}
+
+
+.product__page__img img {
+    width: 100%;
+}
+
+
+.product__page__block {
+    background-color: white;
+    padding: 20px 50px;
+}
+
+
+.product__page__name {
+    color: black;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+
+.product__page__info {
+    padding-top: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+
+.product__page__info p {
+    font-size: 14px;
+    opacity: 0.6;
+}
+
+
+.product__page__social {
+    display: flex;
+    gap: 20px;
+}
+
+
+
+
+
+
+
+

@@ -1,20 +1,21 @@
 import { useDispatch, useSelector } from 'react-redux';
+import { useCallback, useMemo } from 'react';
+import { productAddToCart } from '../../redux/actions';
 import './ProductsBuy.css';
-import { cartAdd } from '../../redux/actions';
 
-export const ProductsBuy = ({ item }) => {
+export const ProductsBuy = ({ product }) => {
   const dispatch = useDispatch();
   const items = useSelector(state => state.cartReducer.cart);
-  const isItemInCart = items.some(res => res.text.id === item.id);
+  const isProductInCart = useMemo(() => items.some(res => res.product.id === product.id), [product.id, items]);
 
-  const handleClick = (e) => {
+  const handleClick = useCallback((e) => {
     e.preventDefault();
-    if (isItemInCart) {
+    if (isProductInCart) {
       return alert('Added');
     } else {
-      dispatch(cartAdd(item, item.id));
+      dispatch(productAddToCart(product, product.id));
     }
-  };
+  }, [dispatch, isProductInCart, product]);
 
   return (
     <button className={'products__button'} onClick={handleClick}>Add to cart</button>

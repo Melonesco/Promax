@@ -8,6 +8,7 @@ import Register from './pages/register-page/Register';
 import Login from './pages/login-page/Login';
 import Email from './pages/email-page/Email';
 import Categories from './pages/categories-page/Categories';
+import { ProductPage } from './pages/product-page/ProductPage';
 
 function Connect () {
   return (
@@ -20,6 +21,7 @@ function Connect () {
         <Route exact path="/login" element={<Login/>}/>
         <Route exact path="/email" element={<Email/>}/>
         <Route exact path="/register" element={<Register/>}/>
+        <Route exact path="/:type/:name" element={<ProductPage/>}/>
       </Routes>
       <Footer/>
     </Router>

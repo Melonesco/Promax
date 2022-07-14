@@ -4,10 +4,11 @@
 .products__sorting {
     width: 100%;
     padding: 40px 0;
-    background-color: #442d85;
+    background-color: #F4F4F4;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    z-index: 5;
 }
 
 
@@ -18,26 +19,30 @@
 
 
 .products__form form input {
-    width: 300px;
-    caret-color: purple;
-    background-color: silver;
+    width: 600px;
+    background-color: #F4F4F4;
+    font-size: 24px;
     font-weight: bold;
-    height: 40px;
-    border: 2px solid silver;
+    height: 60px;
+    padding-left: 20px;
+    border: none;
+    border-bottom: 2px solid black;
     outline: none;
-    border-radius: 0 8px 8px 0;
-    box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.5);
+    text-transform: uppercase;
 }
 
 
 .products__form form img {
-    background-color: silver;
-    height: 40px;
+    background-color: #F4F4F4;
+    height: 60px;
+    border-bottom: 2px solid black;
+    /*border-top: 2px solid black;*/
     width: 36px;
-    padding-left: 10px;
-    padding-right: 10px;
-    border-radius: 8px 0 0 8px;
-    box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    /*padding-left: 10px;*/
+    /*padding-right: 10px;*/
+    /*border-radius: 8px 0 0 8px;*/
+    /*box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.5);*/
 }
 
 
@@ -47,20 +52,19 @@
 
 
 .products__select select {
-    background-color: silver;
+    background-color: #F4F4F4;
+    font-size: 24px;
     width: 100%;
+    border: none;
     font-weight: bold;
-    height: 40px;
-    border: 2px solid silver;
+    height: 60px;
+    border-bottom: 2px solid black;
     outline: none;
-    border-radius: 8px;
-    box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.5);
     padding-left: 10px;
 }
 
 
 .products__select option {
-    padding: 10px;
 }
 
 
@@ -68,7 +72,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin: 0 100px;
+    margin: 0 50px;
     padding: 100px 0;
     gap: 50px;
 }
