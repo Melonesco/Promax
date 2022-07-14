@@ -1,27 +1,27 @@
-import { PRODUCT_ADD_TO_CART, PRODUCT_DELETE_FROM_CART } from '../types';
+import { ADD_PRODUCT_TO_CART, DELETE_PRODUCT_FROM_CART } from '../types';
 
 const initialState = {
-  cart: []
+  productData: []
 };
 
 export const cartReducer = (state = initialState, action) => {
   switch (action.type) {
-  case PRODUCT_ADD_TO_CART:
+  case ADD_PRODUCT_TO_CART:
     return {
       ...state,
-      cart: [...state.cart, action.data]
+      productData: [...state.productData, action.data]
     };
-  case PRODUCT_DELETE_FROM_CART:
-    const itemIndex = state.cart.findIndex(res => res.id === action.id);
+  case DELETE_PRODUCT_FROM_CART:
+    const itemIndex = state.productData.findIndex(res => res.id === action.id);
 
-    const deleteItemInCart = [
-      ...state.cart.slice(0, itemIndex),
-      ...state.cart.slice(itemIndex + 1)
+    const deleteItemFromCart = [
+      ...state.productData.slice(0, itemIndex),
+      ...state.productData.slice(itemIndex + 1)
     ];
 
     return {
       ...state,
-      cart: deleteItemInCart
+      productData: deleteItemFromCart
     };
   default:
     return state;

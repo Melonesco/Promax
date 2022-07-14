@@ -1,6 +1,3 @@
-/* products */
-
-
 .products__sorting {
     width: 100%;
     padding: 40px 0;
@@ -36,19 +33,9 @@
     background-color: #F4F4F4;
     height: 60px;
     border-bottom: 2px solid black;
-    /*border-top: 2px solid black;*/
     width: 36px;
     cursor: pointer;
-    /*padding-left: 10px;*/
-    /*padding-right: 10px;*/
-    /*border-radius: 8px 0 0 8px;*/
-    /*box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.5);*/
 }
-
-
-/*.products__select {*/
-/*    margin-top: 50px;*/
-/*}*/
 
 
 .products__select select {

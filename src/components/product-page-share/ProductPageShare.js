@@ -1,7 +1,7 @@
 import React from 'react';
-import './ProductPageShare.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faShareNodes } from '@fortawesome/free-solid-svg-icons';
+import './ProductPageShare.css';
 
 export const ProductPageShare = () => {
   return (

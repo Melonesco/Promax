@@ -2,7 +2,7 @@ import React, { useCallback } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 import { ProductsBuy } from '../products-buy/ProductsBuy';
-import { setCurrentProduct } from '../../redux/actions';
+import { currentProduct } from '../../redux/actions';
 import './ProductCards.css';
 
 export const ProductsCards = ({ productCards }) => {
@@ -10,7 +10,7 @@ export const ProductsCards = ({ productCards }) => {
   const dispatch = useDispatch();
 
   const handleClick = useCallback(() => {
-    dispatch(setCurrentProduct(productCards));
+    dispatch(currentProduct(productCards));
     navigate(`/${productCards.type}/${productCards.name}`);
   }, [dispatch, navigate, productCards]);
 
@@ -24,9 +24,6 @@ export const ProductsCards = ({ productCards }) => {
         <div>{productCards.price} $</div>
         <ProductsBuy product={productCards}/>
       </div>
-      {/* <div className={'products__carts__info'}> */}
-      {/*  {item.info} */}
-      {/* </div> */}
     </div>
   );
 };

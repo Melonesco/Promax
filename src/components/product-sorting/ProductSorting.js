@@ -1,6 +1,6 @@
 import React, { useCallback, useMemo, useState } from 'react';
 import Search from '../../images/icons/search-line.svg';
-import Products from '../products/Products';
+import Products from '../../storage/products/Products';
 import { ProductsCards } from '../product-cards/ProductCards';
 import './ProductSorting.css';
 

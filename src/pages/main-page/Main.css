@@ -71,12 +71,12 @@
 }
 
 
-#first {
+.first {
     padding-top: 150px;
 }
 
 
-#second {
+.second {
     padding-bottom: 150px;
 }
 

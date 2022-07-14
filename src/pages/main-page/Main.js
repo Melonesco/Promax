@@ -1,11 +1,11 @@
-import './Main.css';
 import React from 'react';
 import { Link } from 'react-router-dom';
-import Carts from '../../images/block/photos_desktop.png';
+import Cards from '../../images/block/photos_desktop.png';
+import './Main.css';
 
 function Main () {
   return (
-    <>
+    <div>
       <div className={'intro'}>
         <div className={'intro__shop'}>
           <div>
@@ -16,7 +16,7 @@ function Main () {
         </div>
       </div>
 
-      <div id="first" className={'container'}>
+      <div className={'container first'}>
         <div className={'container__inner'}>
           <div className={'container__one'}>
             <div>
@@ -34,7 +34,7 @@ function Main () {
           </div>
         </div>
       </div>
-      <div id={'second'} className={'container'}>
+      <div className={'container second'}>
         <div id={'container__inner-three'} className={'container__inner'}>
           <div className={'container__three'}>
             <div>
@@ -68,7 +68,7 @@ function Main () {
                         you.</p>
         </div>
         <div>
-          <img src={Carts} alt=""/>
+          <img src={Cards} alt=""/>
         </div>
       </div>
 
@@ -83,7 +83,7 @@ function Main () {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 }
 

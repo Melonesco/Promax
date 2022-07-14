@@ -1,12 +1,12 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
-import './ProductPage.css';
 import { ProductPageShare } from '../../components/product-page-share/ProductPageShare';
 import { ProductPageWishlist } from '../../components/product-page-wishlist/ProductPageWishlist';
 import { ProductPageSize } from '../../components/product-page-size/ProductPageSize';
+import './ProductPage.css';
 
 export const ProductPage = () => {
-  const product = useSelector(state => state.productCurrentReducer.productCurrent.item);
+  const product = useSelector(state => state.currentProductReducer.currentProduct.item);
 
   return (
     <div className={'product__page'}>

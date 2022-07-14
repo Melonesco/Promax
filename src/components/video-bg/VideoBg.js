@@ -1,5 +1,4 @@
 import React from 'react';
-// import SV from '../../video/4.mp4';
 
 export const VideoBg = () => {
   return (

@@ -1,10 +1,10 @@
+import React, { useMemo } from 'react';
 import { useSelector } from 'react-redux';
-import { useMemo } from 'react';
 import { CartProductDelete } from '../cart-product-delete/CartProductDelete';
 import './CartMenu.css';
 
 export const CartMenu = () => {
-  const cart = useSelector(state => state.cartReducer.cart);
+  const cart = useSelector(state => state.cartReducer.productData);
   const totalPrice = useMemo(() => cart.reduce((acc, item) => acc + item.product.price, 0), [cart]);
 
   return (
