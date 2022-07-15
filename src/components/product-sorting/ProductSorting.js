@@ -1,7 +1,7 @@
 import React, { useCallback, useMemo, useState } from 'react';
 import Search from '../../images/icons/search-line.svg';
 import Products from '../../storage/products/Products';
-import { ProductsCards } from '../product-cards/ProductCards';
+import { ProductsCard } from '../product-card/ProductCard';
 import './ProductSorting.css';
 
 export const ProductSorting = () => {
@@ -58,7 +58,7 @@ export const ProductSorting = () => {
         </div>
       </div>
       <div className={'products__goods'}>
-        {filteredName.map(res => <ProductsCards productCards={res} key={res.id}/>)}
+        {filteredName.map(res => <ProductsCard productCard={res} key={res.id}/>)}
       </div>
     </div>
   );

@@ -1,25 +1,29 @@
-import React from 'react';
-import { useSelector } from 'react-redux';
-import { ProductPageShare } from '../../components/product-page-share/ProductPageShare';
+import React, { useEffect, useState } from 'react';
+import { useParams } from 'react-router-dom';
 import { ProductPageWishlist } from '../../components/product-page-wishlist/ProductPageWishlist';
+import { ProductPageShare } from '../../components/product-page-share/ProductPageShare';
 import { ProductPageSize } from '../../components/product-page-size/ProductPageSize';
+import ProductPageButton from '../../components/product-page-button/ProductPageButton';
 import './ProductPage.css';
 
-export const ProductPage = () => {
-  const product = useSelector(state => state.currentProductReducer.currentProduct.item);
+export const ProductPage = ({ products }) => {
+  const [product, setProduct] = useState(null);
+  const { id } = useParams();
+
+  useEffect(() => setProduct(...products.filter(res => res.id === Number(id))), [id, products]);
 
   return (
     <div className={'product__page'}>
       <div>
         <div className={'product__page__blocks'}>
           <div className={'product__page__img'}>
-            <img src={product.img[0]} alt=""/>
+            <img src={product?.img[0]} alt=""/>
           </div>
           <div className={'product__page__block'}>
-            <p className={'product__page__name'}>{product.name}</p>
+            <p className={'product__page__name'}>{product?.name}</p>
             <div className={'product__page__info'}>
               <p>
-                {product.info}
+                {product?.info}
               </p>
               <div className={'product__page__social'}>
                 <ProductPageWishlist/>
@@ -27,7 +31,12 @@ export const ProductPage = () => {
               </div>
             </div>
             <ProductPageSize product={product}/>
-            <p className={'product__page__price'}>{product.price}</p>
+            <div className={'product__page__price'}>
+              <p>
+                {product?.price} $
+              </p>
+              <ProductPageButton product={product}/>
+            </div>
           </div>
         </div>
       </div>

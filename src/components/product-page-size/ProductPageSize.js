@@ -2,7 +2,7 @@ import React, { useCallback, useState } from 'react';
 import './ProductPageSize.css';
 
 export const ProductPageSize = ({ product }) => {
-  const [size, setSize] = useState(product.size[0]);
+  const [size, setSize] = useState();
 
   const handleClick = useCallback((size) => () => setSize(size), []);
 
@@ -13,7 +13,7 @@ export const ProductPageSize = ({ product }) => {
       </div>
       <div className={'product__page__size__list'}>
         <ul>
-          {product.size.map((item, i) => <li key={i} onClick={handleClick(item)}>{item}</li>)}
+          {product?.size.map((item, i) => <li key={i} onClick={handleClick(item)}>{item}</li>)}
         </ul>
       </div>
     </div>
