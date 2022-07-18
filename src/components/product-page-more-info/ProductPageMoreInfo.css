@@ -1,0 +1,44 @@
+.product__page__more__info {
+    width: 600px;
+    height: 640px;
+    background-color: white;
+}
+
+
+.product__page__guarantee,
+.product__page__payment {
+    padding: 50px;
+}
+
+
+.product__page__payment h2,
+.product__page__guarantee h2 {
+    font-size: 20px;
+}
+
+
+.product__page__payment__list {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+
+.product__page__payment__list p {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+
+.product__page__guarantee__list {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+
+.product__page__guarantee__list p {
+    font-size: 14px;
+}

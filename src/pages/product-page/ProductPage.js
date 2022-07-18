@@ -5,6 +5,9 @@ import { ProductPageShare } from '../../components/product-page-share/ProductPag
 import { ProductPageSize } from '../../components/product-page-size/ProductPageSize';
 import ProductPageButton from '../../components/product-page-button/ProductPageButton';
 import './ProductPage.css';
+import ProductDelivery from '../../components/product-delivery/ProductDelivery';
+import ProductPageDescription from '../../components/productPageDescription/ProductPageDescription';
+import ProductPageMoreInfo from '../../components/product-page-more-info/ProductPageMoreInfo';
 
 export const ProductPage = ({ products }) => {
   const [product, setProduct] = useState(null);
@@ -37,7 +40,12 @@ export const ProductPage = ({ products }) => {
               </p>
               <ProductPageButton product={product}/>
             </div>
+            <ProductDelivery/>
           </div>
+        </div>
+        <div className={'product__page__blocks'}>
+          <ProductPageDescription/>
+          <ProductPageMoreInfo/>
         </div>
       </div>
     </div>

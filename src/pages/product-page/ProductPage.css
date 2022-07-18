@@ -1,5 +1,6 @@
 .product__page {
-    height: 100vh;
+    /*min-height: 170vh;*/
+    padding: 150px 0;
     background-color: #F4F4F4;
     position: relative;
     display: flex;
@@ -11,7 +12,6 @@
 .product__page__blocks {
     display: flex;
     justify-content: center;
-    align-items: center;
 }
 
 
@@ -65,7 +65,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 40px 0;
+    margin: 60px 0;
 }
 
 
