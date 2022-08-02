@@ -36,7 +36,7 @@
 }
 
 
-.intro__shop a {
+.intro__shop__button {
     color: white;
     font-size: 18px;
     text-transform: uppercase;
@@ -54,7 +54,7 @@
 }
 
 
-.intro__shop a:hover {
+.intro__shop__button:hover {
     background-color: white;
     color: black;
     border: solid 1px white;
@@ -66,7 +66,7 @@
 .container {
     display: flex;
     justify-content: center;
-    background-color: black;
+    background-color: #1F1F1F;
     padding: 0 70px;
 }
 
@@ -83,73 +83,55 @@
 
 .container__inner {
     width: 100%;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-
-}
-
-
-#container__inner-two {
-    margin-top: 150px;
     overflow: hidden;
 }
 
 
-#container__inner-three {
-    margin-top: -150px;
-    overflow: hidden;
-}
-
-
-.container__one,
-.container__two,
-.container__three,
-.container__four {
+.container__body {
     width: 100%;
     height: 100vh;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    overflow: hidden;
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative;
 
-    transition: transform 1s;
+    transition: all 1s linear;
 }
 
 
-.container__one:hover,
-.container__two:hover,
-.container__three:hover,
-.container__four:hover {
+.container__body:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    height: 40%;
+    width: 100%;
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.7));
+}
+
+
+.container__body:hover {
     transform: scale(1.1);
 }
 
 
-.container__one p,
-.container__two p,
-.container__three p,
-.container__four p {
+.container__body div {
+    position: absolute;
+    z-index: 5;
+}
+
+
+.container__body p {
     color: white;
     font-size: 32px;
     text-transform: uppercase;
     font-weight: bold;
     text-align: center;
     margin-bottom: 20px;
-    user-select: none;
 }
 
 
-.container__one p {
-    color: black;
-}
-
-
-.container__buttons {
+.container__button {
     text-transform: uppercase;
     display: block;
     color: white;
@@ -162,51 +144,37 @@
     border: solid 1px black;
     border-radius: 5px;
     transition: all 0.2s linear;
-    z-index: 500;
-    user-select: none;
 }
 
 
-.container__one a:hover,
-.container__two a:hover,
-.container__three a:hover,
-.container__four a:hover {
-    color: black;
+.container__button:hover {
     background-color: white;
+    color: black;
     border: solid 1px white;
 }
 
 
-.container__one {
-    background-image: url("../../images/block/gucci.jpg");
-}
-
-
-.container__two {
-    background-image: url("../../images/block/puma.jpg");
-}
-
-
-.container__three {
-    background-image: url("../../images/block/smile.jpg");
-}
-
-
-.container__four {
-    background-image: url("../../images/block/balmain.jpg");
-}
-
-
-.container__one:after,
-.container__two:after,
-.container__three:after,
-.container__four:after {
-    content: "";
+.container__body img {
     position: absolute;
-    bottom: 0;
-    height: 40%;
+    top: 0;
     width: 100%;
-    background: linear-gradient(transparent, rgba(0, 0, 0, 0.7));
+    z-index: 0;
+}
+
+
+#gucci p {
+    color: black;
+}
+
+
+.con-two {
+    margin-top: 150px;
+}
+
+
+.con-three {
+    margin-top: -150px;
+    margin-bottom: 150px;
 }
 
 
@@ -246,9 +214,10 @@
 /* body */
 
 .body {
+    position: relative;
+    height: 1100px;
     background-image: url("../../images/block/fon.jpg");
     display: flex;
-    justify-content: space-around;
     align-items: center;
 }
 
@@ -256,6 +225,7 @@
 .body__info {
     max-width: 500px;
     text-align: center;
+    margin-left: 100px;
 }
 
 
@@ -275,6 +245,18 @@
 }
 
 
+.body__img {
+    margin-right: 100px;
+    position: absolute;
+    right: 0
+}
+
+
+.body__img img {
+    width: 100%;
+}
+
+
 /* content */
 
 .content {
@@ -283,9 +265,9 @@
     height: 300px;
     text-align: center;
     margin: 0 auto;
-    align-items: center;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 
@@ -295,7 +277,7 @@
 
 
 .content p {
-    padding: 20px 0 25px 0;
+    padding: 20px 0;
     opacity: 0.7;
 }
 
@@ -324,3 +306,723 @@
     border: solid 1px black;
 }
 
+
+@media (max-width: 1600px) {
+    .first {
+        padding-top: 100px;
+    }
+
+
+    .second {
+        padding-bottom: 100px;
+    }
+
+
+    .container__body {
+        height: 80vh;
+    }
+
+
+    .box {
+        margin: 100px 0;
+    }
+
+
+    .body {
+        height: 1000px;
+    }
+
+
+    .body__info {
+        max-width: 500px;
+    }
+
+
+    .body__info h2 {
+        font-size: 40px;
+    }
+
+
+    .body__info p {
+        margin-top: 18px;
+        font-size: 20px;
+    }
+
+
+    .body__img {
+        width: 50%;
+    }
+}
+
+
+@media (max-width: 1400px) {
+
+    .container__body {
+        height: 70vh;
+    }
+
+
+    .body {
+        height: 800px;
+    }
+
+
+    .body__info {
+        max-width: 400px;
+    }
+
+
+    .body__info h2 {
+        font-size: 36px;
+    }
+
+
+    .body__info p {
+        font-size: 16px;
+    }
+
+
+    .body__img {
+        width: 45%;
+    }
+}
+
+
+@media (max-width: 1200px) {
+    .intro {
+        width: 100%;
+        height: 80vh;
+    }
+
+
+    #intro__shop_id {
+        height: 100px;
+    }
+
+
+    .intro__shop p {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+
+
+    .intro__shop__button {
+        font-size: 16px;
+        width: 160px;
+        padding: 18px;
+    }
+
+
+    .container {
+        padding: 0 50px;
+    }
+
+
+    .first {
+        padding-top: 100px;
+    }
+
+
+    .second {
+        padding-bottom: 100px;
+    }
+
+
+    .container__body {
+        height: 60vh;
+    }
+
+
+    .container__body p {
+        font-size: 28px;
+        margin-bottom: 10px;
+    }
+
+
+    .container__button {
+        font-size: 16px;
+        width: 160px;
+        padding: 18px;
+    }
+
+
+    .con-two {
+        margin-top: 100px;
+    }
+
+
+    .con-three {
+        margin-top: -100px;
+        margin-bottom: 100px;
+    }
+
+
+    .box {
+        margin: 100px 0;
+    }
+
+
+    #box__img-1,
+    #box__img-2,
+    #box__img-3 {
+        height: 80vh;
+    }
+
+
+    .body {
+        height: 70vh
+    }
+
+
+    .body__info {
+        max-width: 400px;
+        margin-left: 50px;
+    }
+
+
+    .body__info h2 {
+        font-size: 32px;
+    }
+
+
+    .body__info p {
+        margin-top: 10px;
+    }
+
+
+    .body__img {
+        margin-right: 50px;
+        width: 40%;
+    }
+
+
+    .content h2 {
+        font-size: 28px;
+    }
+}
+
+
+@media (max-width: 1000px) {
+    .intro {
+        width: 100%;
+        height: 60vh;
+    }
+
+
+    #intro__shop_id {
+        height: 50px;
+    }
+
+
+    .intro__shop p {
+        font-size: 12px;
+        margin-bottom: 10px;
+    }
+
+
+    .intro__shop__button {
+        font-size: 14px;
+        width: 140px;
+        padding: 16px;
+    }
+
+
+    .first {
+        padding-top: 50px;
+    }
+
+
+    .second {
+        padding-bottom: 50px;
+    }
+
+
+    .container__body {
+        height: 40vh;
+    }
+
+
+    .con-two {
+        margin-top: 50px;
+    }
+
+
+    .con-three {
+        margin-top: -50px;
+        margin-bottom: 50px;
+    }
+
+
+    .container__body p {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+
+
+    .container__button {
+        font-size: 14px;
+        width: 140px;
+        padding: 16px;
+    }
+
+
+    .box {
+        margin: 50px 30px;
+    }
+
+
+    #box__img-1,
+    #box__img-2,
+    #box__img-3 {
+        height: 60vh;
+    }
+
+
+    .body {
+        height: 50vh
+    }
+
+
+    .body__info {
+        max-width: 300px;
+        margin-left: 50px;
+    }
+
+
+    .body__info h2 {
+        font-size: 24px;
+    }
+
+
+    .body__info p {
+        font-size: 14px;
+    }
+
+
+    .body__img {
+        margin-right: 50px;
+        width: 35%;
+    }
+
+
+    .content {
+        max-width: 500px;
+        height: 250px;
+    }
+
+
+    .content h2 {
+        font-size: 24px;
+    }
+
+
+    .content p {
+        padding: 15px 0;
+    }
+
+
+    .content input {
+        width: 250px;
+        height: 50px;
+        padding-left: 15px;
+    }
+}
+
+
+@media (max-width: 700px) {
+    .intro {
+        height: 50vh;
+    }
+
+
+    #intro__shop_id {
+        height: 40px;
+    }
+
+
+    .intro__shop p {
+        font-size: 11px;
+        margin-bottom: 6px;
+    }
+
+
+    .intro__shop__button {
+        font-size: 12px;
+        width: 120px;
+        padding: 14px;
+    }
+
+
+    .container {
+        padding: 0 30px;
+    }
+
+
+    .first {
+        padding-top: 40px;
+    }
+
+
+    .second {
+        padding-bottom: 40px;
+    }
+
+
+    .con-two {
+        margin-top: 40px;
+    }
+
+
+    .con-three {
+        margin-top: -40px;
+        margin-bottom: 40px;
+    }
+
+
+    .container__body {
+        height: 30vh;
+    }
+
+
+    .container__body p {
+        font-size: 20px;
+        margin-bottom: 6px;
+    }
+
+
+    .container__button {
+        font-size: 12px;
+        width: 120px;
+        padding: 14px;
+    }
+
+
+    .box {
+        margin: 40px 30px;
+    }
+
+
+    #box__img-1,
+    #box__img-2,
+    #box__img-3 {
+        height: 50vh;
+    }
+
+
+    .body {
+        height: 40vh
+    }
+
+
+    .body__info {
+        max-width: 260px;
+        margin-left: 30px;
+    }
+
+
+    .body__info h2 {
+        font-size: 20px;
+    }
+
+
+    .body__info p {
+        font-size: 12px;
+    }
+
+
+    .body__img {
+        margin-right: 30px;
+    }
+
+
+    .content {
+        max-width: 400px;
+        height: 250px;
+    }
+
+
+    .content h2 {
+        font-size: 20px;
+    }
+
+
+    .content p {
+        font-size: 12px;
+        padding: 10px 0;
+    }
+
+
+    .content input {
+        font-size: 12px;
+        width: 220px;
+        height: 40px;
+        padding-left: 10px;
+    }
+
+
+    .content button {
+        font-size: 12px;
+        height: 40px;
+        width: 180px;
+    }
+}
+
+
+@media (max-width: 600px) {
+    .intro {
+        height: 40vh;
+    }
+
+
+    .intro__shop p {
+        font-size: 10px;
+    }
+
+
+    .intro__shop__button {
+        font-size: 11px;
+        width: 100px;
+        padding: 12px;
+    }
+
+
+    .container {
+        padding: 0 20px;
+    }
+
+
+    .first {
+        padding-top: 30px;
+    }
+
+
+    .second {
+        padding-bottom: 30px;
+    }
+
+
+    .con-two {
+        margin-top: 30px;
+    }
+
+
+    .con-three {
+        margin-top: -30px;
+        margin-bottom: 30px;
+    }
+
+
+    .container__body p {
+        font-size: 16px;
+    }
+
+
+    .container__button {
+        font-size: 11px;
+        width: 100px;
+        padding: 12px;
+    }
+
+
+    .box {
+        margin: 30px 20px;
+    }
+
+
+    #box__img-1,
+    #box__img-2,
+    #box__img-3 {
+        height: 40vh;
+    }
+
+
+    .body {
+        height: 30vh
+    }
+
+
+    .body__info {
+        max-width: 220px;
+        margin-left: 20px;
+    }
+
+
+    .body__info h2 {
+        font-size: 16px;
+    }
+
+
+    .body__info p {
+        font-size: 10px;
+    }
+
+
+    .body__img {
+        margin-right: 20px;
+    }
+
+
+    .content {
+        max-width: 400px;
+        height: 180px;
+    }
+
+
+    .content h2 {
+        font-size: 16px;
+    }
+
+
+    .content p {
+        font-size: 10px;
+        padding: 10px 0;
+    }
+
+
+    .content input {
+        font-size: 10px;
+        width: 200px;
+        height: 30px;
+        padding-left: 5px;
+    }
+
+
+    .content button {
+        font-size: 10px;
+        height: 30px;
+        width: 140px;
+    }
+}
+
+
+@media (max-width: 500px) {
+    .intro {
+        height: 30vh;
+    }
+
+
+    .intro__shop p {
+        font-size: 8px;
+    }
+
+
+    .intro__shop__button {
+        font-size: 10px;
+        width: 80px;
+        padding: 10px;
+    }
+
+
+    .container {
+        padding: 0 10px;
+    }
+
+
+    .first {
+        padding-top: 20px;
+    }
+
+
+    .second {
+        padding-bottom: 20px;
+    }
+
+
+    .con-two {
+        margin-top: 20px;
+    }
+
+
+    .con-three {
+        margin-top: -20px;
+        margin-bottom: 20px;
+    }
+
+
+    .container__body p {
+        font-size: 14px;
+    }
+
+
+    .container__button {
+        font-size: 10px;
+        width: 80px;
+        padding: 10px;
+    }
+
+
+    .box {
+        margin: 20px 10px;
+    }
+
+
+    #box__img-1,
+    #box__img-2,
+    #box__img-3 {
+        height: 30vh;
+    }
+
+
+    .body {
+        height: 25vh
+    }
+
+
+    .body__info {
+        max-width: 180px;
+        margin-left: 20px;
+    }
+
+
+    .body__info h2 {
+        font-size: 14px;
+    }
+
+
+    .body__info p {
+        font-size: 8px;
+    }
+
+
+    .body__img {
+        margin-right: 20px;
+    }
+
+
+    .content {
+        max-width: 400px;
+        height: 160px;
+    }
+
+
+    .content h2 {
+        font-size: 14px;
+    }
+
+
+    .content p {
+        font-size: 8px;
+        padding: 6px 0;
+    }
+
+
+    .content input {
+        font-size: 8px;
+        width: 160px;
+        height: 20px;
+    }
+
+
+    .content button {
+        font-size: 8px;
+        height: 20px;
+        width: 110px;
+    }
+}
+
+
+@media (max-width: 400px) {
+    .container__body {
+        height: 20vh;
+    }
+}

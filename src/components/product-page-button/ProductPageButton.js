@@ -9,11 +9,9 @@ const ProductPageButton = ({ product }) => {
 
   const handleClick = () => {
     const isProductInCart = items.some(res => res.product.id === product.id);
-    if (isProductInCart) {
-      return null;
-    } else {
-      dispatch(addProductToCart(product, product.id));
-    }
+    return isProductInCart ? null : dispatch(addProductToCart(product, product.id));
+
+    // return (product.id) ? console.log(1) : console.log(2);
   };
 
   return (

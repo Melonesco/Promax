@@ -9,7 +9,7 @@ export const ProductsCard = ({ productCard }) => {
 
   return (
     <div className={'products__carts'} onClick={handleClick}>
-      <img className={'products__carts__img'} src={productCard.img[0]} alt=""/>
+      <img className={'products__carts__img'} src={productCard.images[0]} alt=""/>
       <div className={'products__carts__name'}>
         {productCard.name}
       </div>

@@ -9,7 +9,7 @@ export const MenuBlock = () => {
     <div className={'nav__burger'}>
       <input type="checkbox" id={'toggle'}/>
       <label htmlFor={'toggle'}>
-        <FontAwesomeIcon color={'white'} fontSize={'32px'} icon={faBars}/>
+        <FontAwesomeIcon color={'white'} className={'nav__icon'} icon={faBars}/>
       </label>
       <div className={'nav__menu'}>
         <label id="nav__close" htmlFor={'toggle'}>

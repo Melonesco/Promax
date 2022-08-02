@@ -30,120 +30,120 @@ const Products = [
     type: 'T-shirts',
     name: 'Gucci t-shirt',
     price: 15000,
-    color: ['red', 'green', 'white', 'black'],
-    img: [Gucci, Gucci2, Gucci3, Gucci4, Gucci5],
+    colors: ['red', 'green', 'white', 'black'],
+    images: [Gucci, Gucci2, Gucci3, Gucci4, Gucci5],
     info: 'Good quality men\'s t-shirt',
-    size: ['S', 'M', 'L', 'XL', '2XL', '3XL']
+    sizes: ['S', 'M', 'L', 'XL', '2XL', '3XL']
   },
   {
     id: 2,
     type: 'T-shirts',
     name: 'Dark t-shirt',
     price: 7000,
-    color: ['red', 'green', 'white', 'black'],
-    img: [Dark3d],
+    colors: ['red', 'green', 'white', 'black'],
+    images: [Dark3d],
     info: 'Good quality men\'s t-shirt',
-    size: ['S', 'M', 'L', 'XL', '2XL']
+    sizes: ['S', 'M', 'L', 'XL', '2XL']
   },
   {
     id: 3,
     type: 'Shorts',
     name: 'White Shorts',
     price: 2500,
-    color: ['red', 'green', 'white', 'black'],
-    img: [ShortsImg],
+    colors: ['red', 'green', 'white', 'black'],
+    images: [ShortsImg],
     info: 'Good quality men\'s shorts',
-    size: ['S', 'M', 'L', 'XL', '2XL', '3XL']
+    sizes: ['S', 'M', 'L', 'XL', '2XL', '3XL']
   },
   {
     id: 4,
     type: 'Shorts',
     name: 'Puma shorts',
     price: 3200,
-    color: ['red', 'green', 'white', 'black'],
-    img: [Puma],
+    colors: ['red', 'green', 'white', 'black'],
+    images: [Puma],
     info: 'Good quality men\'s shorts',
-    size: ['S', 'M', 'L', 'XL', '2XL', '3XL', '4XL']
+    sizes: ['S', 'M', 'L', 'XL', '2XL', '3XL', '4XL']
   },
   {
     id: 5,
     type: 'Caps',
     name: 'Hip Hop cap',
     price: 800,
-    color: ['red', 'green', 'white', 'black'],
-    img: [HipHop1, HipHop2, HipHop3, HipHop4],
+    colors: ['red', 'green', 'white', 'black'],
+    images: [HipHop1, HipHop2, HipHop3, HipHop4],
     info: 'Good quality men\'s cap',
-    size: ['S', 'M', 'L', 'XL', '2XL', '3XL']
+    sizes: ['S', 'M', 'L', 'XL', '2XL', '3XL']
   },
   {
     id: 6,
     type: 'T-shirts',
     name: 'Printer 3D t-shirt',
     price: 500,
-    color: ['red', 'green', 'white', 'black'],
-    img: [Printer3d2],
+    colors: ['red', 'green', 'white', 'black'],
+    images: [Printer3d2],
     info: 'Good quality men\'s t-shirt',
-    size: ['S', 'M', 'L', 'XL', '2XL', '3XL']
+    sizes: ['S', 'M', 'L', 'XL', '2XL', '3XL']
   },
   {
     id: 7,
     type: 'Caps',
     name: 'Summer cap',
     price: 1000,
-    color: ['red', 'green', 'white', 'black'],
-    img: [Sum2, Sum3],
+    colors: ['red', 'green', 'white', 'black'],
+    images: [Sum2, Sum3],
     info: 'Good quality men\'s cap',
-    size: ['M', 'L', 'XL', '2XL', '3XL']
+    sizes: ['M', 'L', 'XL', '2XL', '3XL']
   },
   {
     id: 8,
     type: 'T-shirts',
     name: '3D t-shirt printer',
     price: 500,
-    color: ['red', 'green', 'white', 'black'],
-    img: [Printer3d],
+    colors: ['red', 'green', 'white', 'black'],
+    images: [Printer3d],
     info: 'Good quality men\'s t-shirt',
-    size: ['S', 'M', 'L', 'XL', '2XL', '3XL', '4XL']
+    sizes: ['S', 'M', 'L', 'XL', '2XL', '3XL', '4XL']
   },
   {
     id: 9,
     type: 'Shorts',
     name: 'Nike shorts',
     price: 2200,
-    color: ['red', 'green', 'white', 'black'],
-    img: [Nike1, Nike2, Nike3, Nike4],
+    colors: ['red', 'green', 'white', 'black'],
+    images: [Nike1, Nike2, Nike3, Nike4],
     info: 'Good quality men\'s shorts',
-    size: ['S', 'M', 'L', 'XL', '2XL']
+    sizes: ['S', 'M', 'L', 'XL', '2XL']
   },
   {
     id: 10,
     type: 'Caps',
     name: 'La cap',
     price: 1500,
-    color: ['red', 'green', 'white', 'black'],
-    img: [La1, La2, La3],
+    colors: ['red', 'green', 'white', 'black'],
+    images: [La1, La2, La3],
     info: 'Good quality men\'s cap',
-    size: ['S', 'M', 'L', 'XL', '2XL']
+    sizes: ['S', 'M', 'L', 'XL', '2XL']
   },
   {
     id: 11,
     type: 'T-shirts',
     name: '3D t-shirt printer',
     price: 500,
-    color: ['red', 'green', 'white', 'black'],
-    img: [Print3d],
+    colors: ['red', 'green', 'white', 'black'],
+    images: [Print3d],
     info: 'Good quality men\'s t-shirt',
-    size: ['S', 'M', 'L', 'XL', '2XL', '3XL']
+    sizes: ['S', 'M', 'L', 'XL', '2XL', '3XL']
   },
   {
     id: 12,
     type: 'T-shirts',
     name: '3D t-shirt printer',
     price: 500,
-    color: ['red', 'green', 'white', 'black'],
-    img: [IceCream],
+    colors: ['red', 'green', 'white', 'black'],
+    images: [IceCream],
     info: 'Good quality men\'s t-shirt',
-    size: ['S', 'M', 'L', 'XL', '2XL', '3XL']
+    sizes: ['S', 'M', 'L', 'XL', '2XL', '3XL']
   }
 ];
 

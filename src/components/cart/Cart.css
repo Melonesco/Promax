@@ -1,3 +1,31 @@
 .cart {
     position: relative;
 }
+
+
+.cart__icon {
+    cursor: pointer;
+    color: white;
+    font-size: 32px;
+}
+
+
+@media (max-width: 900px) {
+    .cart__icon {
+        font-size: 28px;
+    }
+}
+
+
+@media (max-width: 700px) {
+    .cart__icon {
+        font-size: 24px;
+    }
+}
+
+
+@media (max-width: 600px) {
+    .cart__icon {
+        font-size: 20px;
+    }
+}

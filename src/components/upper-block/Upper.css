@@ -1,5 +1,3 @@
-/* upper */
-
 .upper {
     background-color: black;
     width: 100%;
@@ -64,4 +62,84 @@
 
 .social:hover {
     color: yellow;
+}
+
+
+@media (max-width: 1200px) {
+    .upper h2,
+    .upper a {
+        font-size: 14px;
+    }
+
+
+    .upper__block {
+        margin: 0 40px;
+    }
+}
+
+
+@media (max-width: 900px) {
+    .upper {
+        height: 30px;
+    }
+
+
+    .upper h2,
+    .upper a {
+        font-size: 12px;
+    }
+
+
+    .upper__block {
+        margin: 0 30px;
+        height: 30px;
+    }
+
+
+    .upper__block__connect a {
+        margin-left: 8px;
+    }
+}
+
+
+@media (max-width: 700px) {
+    .upper {
+        height: 25px;
+    }
+
+
+    .upper h2,
+    .upper a {
+        font-size: 10px;
+    }
+
+
+    .upper__block {
+        margin: 0 20px;
+        height: 25px;
+    }
+
+
+    .upper__block__connect a {
+        margin-left: 5px;
+    }
+}
+
+
+@media (max-width: 600px) {
+    .upper {
+        height: 20px;
+    }
+
+
+    .upper h2,
+    .upper a {
+        font-size: 8px;
+    }
+
+
+    .upper__block {
+        margin: 0 10px;
+        height: 20px;
+    }
 }

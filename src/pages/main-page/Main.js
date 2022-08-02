@@ -1,5 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import Gucci from '../../images/block/gucci.jpg';
+import Puma from '../../images/block/puma4.jpg';
+import Smile from '../../images/block/smile.jpg';
+import Balmain from '../../images/block/balmain.jpg';
 import Cards from '../../images/block/photos_desktop.png';
 import './Main.css';
 
@@ -10,7 +14,7 @@ function Main () {
         <div className={'intro__shop'}>
           <div>
             <p>by Just PROMAX</p>
-            <Link to="/categories">Shop now</Link>
+            <Link className={'intro__shop__button'} to="/categories">Shop now</Link>
             <div id={'intro__shop_id'}></div>
           </div>
         </div>
@@ -18,37 +22,41 @@ function Main () {
 
       <div className={'container first'}>
         <div className={'container__inner'}>
-          <div className={'container__one'}>
+          <div className={'container__body'} id={'gucci'}>
             <div>
               <p>GUCCI</p>
-              <Link className={'container__buttons'} to="/categories">Shop Now</Link>
+              <Link className={'container__button'} to={'/categories'}>Shop Now</Link>
             </div>
+            <img src={Gucci} alt=""/>
           </div>
         </div>
-        <div id={'container__inner-two'} className={'container__inner'}>
-          <div className={'container__two'}>
+        <div className={'container__inner con-two'}>
+          <div className={'container__body'}>
             <div>
-              <p>Puma</p>
-              <Link className={'container__buttons'} to="/categories">Shop Now</Link>
+              <p>PUMA</p>
+              <Link className={'container__button'} to={'/categories'}>Shop Now</Link>
             </div>
+            <img width={'120%'} src={Puma} alt=""/>
           </div>
         </div>
       </div>
       <div className={'container second'}>
-        <div id={'container__inner-three'} className={'container__inner'}>
-          <div className={'container__three'}>
+        <div className={'container__inner con-three'}>
+          <div className={'container__body'}>
             <div>
-              <p>Smile</p>
-              <Link className={'container__buttons'} to="/categories">Shop Now</Link>
+              <p>SMILE</p>
+              <Link className={'container__button'} to={'/categories'}>Shop Now</Link>
             </div>
+            <img src={Smile} alt=""/>
           </div>
         </div>
         <div className={'container__inner'}>
-          <div className={'container__four'}>
+          <div className={'container__body'}>
             <div>
-              <p>Balmain</p>
-              <Link className={'container__buttons'} to="/categories">Shop Now</Link>
+              <p>BALMAIN</p>
+              <Link className={'container__button'} to={'/categories'}>Shop Now</Link>
             </div>
+            <img src={Balmain} alt=""/>
           </div>
         </div>
       </div>
@@ -67,7 +75,7 @@ function Main () {
           <p>You can buy branded and high quality T-shirts in the <b>PROMAX</b> store. We work and try for
                         you.</p>
         </div>
-        <div>
+        <div className={'body__img'}>
           <img src={Cards} alt=""/>
         </div>
       </div>

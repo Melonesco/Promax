@@ -7,7 +7,7 @@ export const addProductToCart = (product, id) => {
   };
 };
 
-export const deleteProductFromCart = (id) => {
+export const deleteProductIdFromCart = (id) => {
   return {
     type: DELETE_PRODUCT_FROM_CART,
     id

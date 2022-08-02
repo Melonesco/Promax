@@ -35,7 +35,7 @@ function Footer () {
               </a>
             </div>
           </div>
-          <div>
+          <div className={'footer__exclusive'}>
             <h2>Exclusive sales and promotions</h2>
             <p>Get access exclusive sales and promotions</p>
           </div>

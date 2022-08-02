@@ -7,6 +7,11 @@
 }
 
 
+.nav__icon {
+    font-size: 32px;
+}
+
+
 .nav__menu {
     padding-top: 40px;
     width: 500px;
@@ -69,4 +74,25 @@
 
 #toggle:checked ~ .nav__menu {
     display: block;
+}
+
+
+@media (max-width: 900px) {
+    .nav__icon {
+        font-size: 28px;
+    }
+}
+
+
+@media (max-width: 700px) {
+    .nav__icon {
+        font-size: 24px;
+    }
+}
+
+
+@media (max-width: 600px) {
+    .nav__icon {
+        font-size: 20px;
+    }
 }

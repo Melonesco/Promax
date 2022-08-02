@@ -14,9 +14,7 @@ export const Cart = () => {
     <div className={'cart'}>
       <ItemsInCart quantity={items.length}/>
       <FontAwesomeIcon
-        cursor={'pointer'}
-        color={'white'}
-        fontSize={'32px'}
+        className={'cart__icon'}
         icon={faShoppingCart}
         onClick={() => setIsCartMenuVisible(!isCartMenuVisible)}/>
       {isCartMenuVisible && <CartMenu onClick={() => null}/>}
